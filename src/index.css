@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@layer base{
+    body{
+        @apply font-[Raleway];
+    }
+}
+
+.Grid-item{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 200px;
+}
+
+.Grid-item:hover{
+    background-image: linear-gradient(
+
+    to right,
+    rgba(112,157,255, 0.8),
+    hsla(242,74%,61%,0.8)
+
+    ) !important
+}
